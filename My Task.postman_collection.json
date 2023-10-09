@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "26043332-b19c-4e62-8a26-a786ea3c79f4",
+		"name": "My Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30153197"
+	},
+	"item": [
+		{
+			"name": "To do Entries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code should be 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"}\r",
+							"\r",
+							"{\r",
+							"\r",
+							"    pm.environment.get(\"bookId\");\r",
+							"\r",
+							"\r",
+							"    pm.environment.set(\"STSTStudentCourse\",\"respnse[1].id\");\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"{\r",
+							"  \r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://api.postman.com/collections/3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0?access_key=PMAT-01H40M7GCGGGYX7EFK4BFTRHZX",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"collections",
+						"3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "PMAT-01H40M7GCGGGYX7EFK4BFTRHZX"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0?base_url=https://api.postman.com/collections/3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0?access_key=PMAT-01H40M7GCGGGYX7EFK4BFTRHZX",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"entity id\", \"variable_value\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base Url}}/3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0?access_key=PMAT-01H40M7GCGGGYX7EFK4BFTRHZX&baseurl=https://api.postman.com/collections/3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0?access_key=PMAT-01H40M7GCGGGYX7EFK4BFTRHZX",
+					"host": [
+						"{{base Url}}"
+					],
+					"path": [
+						"3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "PMAT-01H40M7GCGGGYX7EFK4BFTRHZX"
+						},
+						{
+							"key": "baseurl",
+							"value": "https://api.postman.com/collections/3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0?access_key=PMAT-01H40M7GCGGGYX7EFK4BFTRHZX",
+							"description": "https://api.postman.com/collections/3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0?access_key=PMAT-01H40M7GCGGGYX7EFK4BFTRHZX"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://testifyacademy.slack.com/files/U03AZPJ0BKM/F05UWTLSM6F/api_collection.postman_collection.json?origin_team=T020LU7757H&origin_channel=D05L1URL7B9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://testifyacademy.slack.com/files/U03AZPJ0BKM/F05UWTLSM6F/api_collection.postman_collection.json?origin_team=T020LU7757H&origin_channel=D05L1URL7B9",
+					"protocol": "https",
+					"host": [
+						"testifyacademy",
+						"slack",
+						"com"
+					],
+					"path": [
+						"files",
+						"U03AZPJ0BKM",
+						"F05UWTLSM6F",
+						"api_collection.postman_collection.json"
+					],
+					"query": [
+						{
+							"key": "origin_team",
+							"value": "T020LU7757H"
+						},
+						{
+							"key": "origin_channel",
+							"value": "D05L1URL7B9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
